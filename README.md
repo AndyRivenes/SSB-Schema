@@ -1,5 +1,5 @@
 # DBIM
-Database In-Memory Examples and Scripts
+Database In-Memory SSB Schema and Example Scripts
 
 A small data pump export file for the SSB schema that can be used on a laptop
 
