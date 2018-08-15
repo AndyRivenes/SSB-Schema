@@ -1,0 +1,12 @@
+# Requires: create directory dpdir as '/u01/oradata/dpdir';
+# May need: grant read,write on directory dpdir to <schema>;
+#
+DIRECTORY=dpdir 
+schemas=ssb
+logfile=impdp_ssb.log
+job_name=ssb_t1
+dumpfile=ssbdp_%U.dmp
+#parallel=4
+#tables=ssb.lineorder:ssb.date_dim:ssb.part:ssb.customer:ssb.supplier
+#remap_schema=ssb:<new schema>
+#remap_tablespace=ts_data:<new ts name>
