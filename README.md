@@ -66,9 +66,11 @@ The import can be accomplished with:
 impdp parfile=impdp.par
 
 respond with "/ as sysdba" or appropriate username/password for a privileged account.
+```
 
 init.ora Parameters:
 
+```
 inmemory_expressions_usage = ENABLE
 inmemory_size = 1100M
 inmemory_virtual_columns = ENABLE
