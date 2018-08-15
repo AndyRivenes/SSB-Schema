@@ -67,11 +67,11 @@ respond with "/ as sysdba" or appropriate username/password for a privileged acc
 
 init.ora Parameters:
 
-inmemory_expressions_usage	     = ENABLE
-inmemory_size			                = 1100M
-inmemory_virtual_columns	       = ENABLE
+inmemory_expressions_usage	= ENABLE
+inmemory_size	= 1100M
+inmemory_virtual_columns = ENABLE
 
-sga_target			                   = 2400M
+sga_target	= 2400M
 
-db_keep_cache_size		            = 800M
+db_keep_cache_size = 800M
 ```
