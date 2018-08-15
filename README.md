@@ -4,6 +4,13 @@ A small data pump export file for the SSB schema that can be used on a laptop
 
 Miscellaneous SQL scripts similar to the DBIM Hands On Lab scripts
 
+The Star Schema Benchmark Whitepaper: https://www.cs.umb.edu/~poneil/StarSchemaB.PDF
+A version of dbgen if you want to build your own: https://github.com/electrum/ssb-dbgen
+A nice how to if you roll your own: https://jorgebarbablog.wordpress.com/2016/03/21/how-to-load-the-ssb-schema-into-an-oracle-database/
+
+And of course if you want more information about this setup: https://www.andyrivenes.com/
+
+
 The schema has been export using Data Pump.
 The schema is roughly 1344MB in size when imported.
 
@@ -60,11 +67,11 @@ respond with "/ as sysdba" or appropriate username/password for a privileged acc
 
 init.ora Parameters:
 
-inmemory_expressions_usage	     string      ENABLE
-inmemory_size			                big integer 1100M
-inmemory_virtual_columns	       string      ENABLE
+inmemory_expressions_usage	     = ENABLE
+inmemory_size			                = 1100M
+inmemory_virtual_columns	       = ENABLE
 
-sga_target			                   big integer 2400M
+sga_target			                   = 2400M
 
-
+db_keep_cache_size		            = 800M
 ```
